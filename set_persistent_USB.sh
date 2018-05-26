@@ -6,9 +6,12 @@
 
 # Create a file #
 sudo touch /etc/udev/rules.d/99-usb-serial.rules
-# Add content #
+# Add arduino_nano (/dev/ttyUSB*) #
 sudo bash -c "echo 'SUBSYSTEM==\"tty\", ATTRS{idVendor}==\"0403\", ATTRS{idProduct}==\"6001\", SYMLINK+=\"solabot_nano\"' >> /etc/udev/rules.d/99-usb-serial.rules"
-sudo bash -c "echo 'SUBSYSTEM==\"tty\", ATTRS{idVendor}==\"2341\", ATTRS{idProduct}==\"8037\", SYMLINK+=\"solabot_micro\"' >> /etc/udev/rules.d/99-usb-serial.rules"
+# Add arduino_micro (/dev/ttyACM*) #
 sudo bash -c "echo 'KERNEL==\"ttyACM*\", ATTRS{idVendor}==\"2341\",SYMLINK+=\"solabot_micro\"' >> /etc/udev/rules.d/99-usb-serial.rules"
+# Add rplidar (/dev/ttyUSB*) #
+sudo bash -c "echo 'SUBSYSTEM==\"tty\", ATTRS{idVendor}==\"10c4\", ATTRS{idProduct}==\"ea60\", SYMLINK+=\"rplidar\"' >> /etc/udev/rules.d/99-usb-serial.rules"
+
 # load the new rule #
 sudo udevadm trigger
