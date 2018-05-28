@@ -1,4 +1,6 @@
-# Give persistent name for usb_devices (arduino nano and micro) #
+#!/bin/bash
+
+###-- Give persistent name for usb_devices (arduino nano and micro) --###
 # source:https://bit.ly/2Lt6NPU #
 
 # lsusb to identify the VendorID and ProductID #
