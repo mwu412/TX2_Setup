@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ###-- Give persistent name for usb_devices (arduino nano and micro) --###
-# source:https://bit.ly/2Lt6NPU #
+# source:https://bit.ly/2Lt6NPU & https://msadowski.github.io/linux-static-port/ #
 
 # lsusb to identify the VendorID and ProductID #
 # In the example "Bus 001 Device 005: ID 0403:6001" 0403 is the VendorID and 6001 the ProductID #
