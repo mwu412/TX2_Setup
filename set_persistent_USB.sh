@@ -15,7 +15,7 @@ sudo bash -c "echo 'KERNEL==\"ttyACM*\", ATTRS{idVendor}==\"2341\",SYMLINK+=\"so
 # Add rplidar (/dev/ttyUSB*) #
 sudo bash -c "echo 'SUBSYSTEM==\"tty\", ATTRS{idVendor}==\"10c4\", ATTRS{idProduct}==\"ea60\", SYMLINK+=\"rplidar\"' >> /etc/udev/rules.d/99-usb-serial.rules"
 # Add RAZOR_IMU_9DOF (/dev/ttyACM*) #
-sudo bash -c "echo 'KERNEL==\"ttyACM*\", ATTRS{idVendor}==\"1b4f\",SYMLINK+=\"solabot_micro\"' >> /etc/udev/rules.d/99-usb-serial.rules"
+sudo bash -c "echo 'KERNEL==\"ttyACM*\", ATTRS{idVendor}==\"1b4f\",SYMLINK+=\"solabot_razor\"' >> /etc/udev/rules.d/99-usb-serial.rules"
 
 # load the new rule #
 sudo udevadm trigger
