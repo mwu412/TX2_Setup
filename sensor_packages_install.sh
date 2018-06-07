@@ -11,8 +11,8 @@ sudo apt-get install ros-kinetic-rplidar-ros
 ###-- ============== --###
 sudo apt-get install ros-kinetic-razor-imu-9dof
 
-###-- ============== --###
-###-- razor_imu_9DOF --###
-###-- ============== --###
+###-- ==== --###
+###-- rf2o --###
+###-- ==== --###
 sudo apt-get install ros-kinetic-mrpt-ekf-slam-2d
 
