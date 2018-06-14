@@ -1,5 +1,5 @@
 #!/bin/bash
-###-- this file mainly install packages for sensors --### 
+###-- this file mainly install packages for sensors or navigation packages --### 
 
 ###-- ======= --###
 ###-- rplidar --###
@@ -16,3 +16,7 @@ sudo apt-get install ros-kinetic-razor-imu-9dof
 ###-- ==== --###
 sudo apt-get install ros-kinetic-mrpt-ekf-slam-2d
 
+###-- ========= --###
+###-- move_base --###
+###-- ========= --###
+sudo apt-get install ros-kinetic-move-base
