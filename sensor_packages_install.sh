@@ -20,3 +20,13 @@ sudo apt-get install ros-kinetic-mrpt-ekf-slam-2d
 ###-- move_base --###
 ###-- ========= --###
 sudo apt-get install ros-kinetic-move-base
+
+###-- ==== --###
+###-- amcl --###
+###-- ==== --###
+sudo apt-get install ros-kinetic-amcl
+
+###-- ================== --###
+###-- robot_localization --###
+###-- ================== --###
+sudo apt-get install ros-kinetic-robot-localization
