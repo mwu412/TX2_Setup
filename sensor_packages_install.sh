@@ -30,3 +30,9 @@ sudo apt-get install ros-kinetic-amcl
 ###-- robot_localization --###
 ###-- ================== --###
 sudo apt-get install ros-kinetic-robot-localization
+
+###-- === --###
+###-- rqt --###
+###-- === --###
+sudo apt-get install ros-kinetic-rqt
+sudo apt-get install ros-kinetic-rqt-common-plugins
