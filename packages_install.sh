@@ -36,3 +36,10 @@ sudo apt-get install ros-kinetic-robot-localization
 ###-- === --###
 sudo apt-get install ros-kinetic-rqt
 sudo apt-get install ros-kinetic-rqt-common-plugins
+
+###-- =================================== --###
+###-- mrpt (rf2o is part of this package) --###
+###-- =================================== --###
+sudo apt-get install mrpt-apps libmrpt-dev
+# see trouble shooting if something is wrong #
+
