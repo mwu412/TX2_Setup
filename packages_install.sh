@@ -43,3 +43,8 @@ sudo apt-get install ros-kinetic-rqt-common-plugins
 sudo apt-get install mrpt-apps libmrpt-dev
 # see trouble shooting if something is wrong #
 
+###-- ================================================ --###
+###-- effort_controllers (solabot_simulator in gazebo) --###
+###-- ================================================ --###
+sudo apt-get install ros-kinetic-effort-controllers
+
