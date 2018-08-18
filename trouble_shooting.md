@@ -18,5 +18,6 @@
       export GAZEBO_MODEL_PATH=/home/liuyc/SOLab/solabot_simulator/src/racecar_description/models:$GAZEBO_MODEL_PATH
   ```  
      to /.bashrc  
+     
   2. also move the models to "/.gazebo/models" folder directly   
   3. and include the URI in launch file
