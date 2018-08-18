@@ -1,6 +1,5 @@
 
-###--mrpt_package cannot be installed--###
-###--================================--###
+## mrpt_package cannot be installed
 
 - If same thing happend like in "https://github.com/MRPT/mrpt/issues/682"
   => Install gcc-7 packages (see this gist):
@@ -9,8 +8,7 @@
       sudo apt update
       sudo apt install g++-7 -y
 
-###--**gazebo simulator** cannot open world--###
-###--==================================--###
+##**gazebo simulator** cannot open world
 
 - **error [parser.cc:581] Unable to find uri[model://racecar_description/models/some_model_here]**
   => export GAZEBO_MODEL_PATH by adding:
