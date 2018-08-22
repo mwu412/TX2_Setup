@@ -1,6 +1,12 @@
 #!/bin/bash
 ###-- this file mainly install packages for sensors or navigation packages --### 
 
+# urg_node for hokuyo
+sudo apt-get install ros-kinetic-urg-node
+
+# joy package
+sudo apt-get install ros-kinetic-joy
+
 ###-- rplidar --###
 ###-- ======= --###
 sudo apt-get install ros-kinetic-rplidar-ros
