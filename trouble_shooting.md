@@ -1,5 +1,6 @@
 ## Razor IMU set up error (in Arduino IDE)
 - This happends when following http://wiki.ros.org/razor_imu_9dof
+
 1-1. Download SparkFun_MPU-9250-DMP_Arduino_Library (dowload .zip file from github)
 1-2. (In Arduino IDE) sketch -> Include library -> Add ZIP library
 
