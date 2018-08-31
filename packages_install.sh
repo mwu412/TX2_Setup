@@ -1,6 +1,10 @@
 #!/bin/bash
 ###-- this file mainly install packages for sensors or navigation packages --### 
 
+###-- joy --###
+###-- === --###
+sudo apt-get install ros-kinetic-joy
+
 ###-- rplidar --###
 ###-- ======= --###
 sudo apt-get install ros-kinetic-rplidar-ros
