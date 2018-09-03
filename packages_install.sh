@@ -58,7 +58,7 @@ cd laser_proc
 git checkout indigo-devel # there is no kinetic-level yet
 
 cd ..
-git clone https://github.com/ros-dirvers/urg_c.git
+git clone https://github.com/ros-drivers/urg_c.git
 
 cd ~/catkin_ws/src
 catkin_make
