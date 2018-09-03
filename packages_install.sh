@@ -39,3 +39,6 @@ sudo apt-get install mrpt-apps libmrpt-dev
 ###-- ================================================ --###
 sudo apt-get install ros-kinetic-effort-controllers
 
+### rosserial-arduino
+sudo apt-get install ros-kinetic-rosserial-arduino
+
