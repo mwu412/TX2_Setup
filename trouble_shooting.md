@@ -1,3 +1,14 @@
+## Razor IMU set up guide
+  1-1. Follow the guide by Sparkfun [here](https://learn.sparkfun.com/tutorials/9dof-razor-imu-m0-hookup-guide).
+  
+  (from "Installing the 9DoF Razor Arduino Core" to "Select the Board and Serial Port")
+  
+  1-2. Then follow the guide by ROS Wiki [here](http://wiki.ros.org/razor_imu_9dof).
+  
+  (from "4.1 Install ROS razor_imu_9dof Package" to "4.2 Load Firmware into Razor Board")
+  
+  
+
 ## Razor IMU set up error (in Arduino IDE)
 - This happends when following http://wiki.ros.org/razor_imu_9dof
 
