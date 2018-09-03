@@ -3,11 +3,11 @@
 
   1-1. Follow the guide by Sparkfun [here](https://learn.sparkfun.com/tutorials/9dof-razor-imu-m0-hookup-guide).
   
-  *from "Installing the 9DoF Razor Arduino Core" to "Select the Board and Serial Port"
+  *from "Installing the 9DoF Razor Arduino Core" to "Select the Board and Serial Port"*
   
   1-2. Then follow the guide by ROS Wiki [here](http://wiki.ros.org/razor_imu_9dof).
   
-  *from "4.1 Install ROS razor_imu_9dof Package" to "4.2 Load Firmware into Razor Board"
+  *from "4.1 Install ROS razor_imu_9dof Package" to "4.2 Load Firmware into Razor Board"*
   
   *NOTICE: The instruction from ROS Wiki "Go to "Tools" → "Board" and select "Arduino Pro or Pro Mini (3.3v, 8mhz) w/ATmega328"" is deadly wrong. You should instead select "Sparkfun 9DoF Razor IMU M0".*
   
