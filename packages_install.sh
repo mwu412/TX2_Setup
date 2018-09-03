@@ -42,3 +42,20 @@ sudo apt-get install ros-kinetic-effort-controllers
 ### rosserial-arduino
 sudo apt-get install ros-kinetic-rosserial-arduino
 
+### urg_node (hokuyo lidar)
+cd ~/catkin_ws/src
+
+git clone https://github.com/ros-drivers/urg_node.git
+cd urg_node
+git checkout indigo-level # there is no kinetic-level yet
+
+cd ..
+git clone https://github.com/ros-perception/laser_proc.git
+cd laser_proc
+git checkout indigo-level # there is no kinetic-level yet
+
+cd ..
+git clone https://github.com/ros-dirvers/urg_c.git
+
+cd ~/catkin_ws/src
+catkin_make
