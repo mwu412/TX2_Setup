@@ -39,3 +39,6 @@ sudo apt-get install ros-kinetic-effort-controllers
 
 ###-- joint_state_controller --###
 sudo apt-get install ros-kinetic-joint-state-controller
+
+###-- dwa_local_planner --###
+sudo apt-get install ros-kinetic-dwa-local-plannert
