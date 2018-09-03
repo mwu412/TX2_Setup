@@ -50,12 +50,12 @@ cd ~/catkin_ws/src
 
 git clone https://github.com/ros-drivers/urg_node.git
 cd urg_node
-git checkout indigo-level # there is no kinetic-level yet
+git checkout indigo-devel # there is no kinetic-level yet
 
 cd ..
 git clone https://github.com/ros-perception/laser_proc.git
 cd laser_proc
-git checkout indigo-level # there is no kinetic-level yet
+git checkout indigo-devel # there is no kinetic-level yet
 
 cd ..
 git clone https://github.com/ros-dirvers/urg_c.git
