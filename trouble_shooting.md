@@ -11,6 +11,12 @@
   
   *NOTICE: The instruction from ROS Wiki "Go to "Tools" → "Board" and select "Arduino Pro or Pro Mini (3.3v, 8mhz) w/ATmega328"" is deadly wrong. You should instead select "Sparkfun 9DoF Razor IMU M0".*
   
+  1-3. Before you compile and upload: Download SparkFun_MPU-9250-DMP_Arduino_Library (dowload .zip file from github)
+  
+  1-4. (In Arduino IDE) sketch -> Include library -> Add ZIP library
+  
+  1-5. Now you can compile and upload the firmware to the IMU.
+  
   
 
 ## Razor IMU set up error (in Arduino IDE)
