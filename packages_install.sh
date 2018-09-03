@@ -42,6 +42,9 @@ sudo apt-get install ros-kinetic-effort-controllers
 ### rosserial-arduino
 sudo apt-get install ros-kinetic-rosserial-arduino
 
+###
+sudo apt-get install ros-kinetic-joy
+
 ### urg_node (hokuyo lidar)
 cd ~/catkin_ws/src
 
