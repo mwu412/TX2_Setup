@@ -80,3 +80,15 @@ E: Unable to correct problems, you have held broken packages.
 > When you first run catkin_make in the root of a workspace, the devel directory gets created and the setup.bash file inside of that dir is designed to "overlay" the workspace on top of all other workspaces that have already been sourced. It is quite common to have many "active" workspaces at a single time. [see this discussion](https://answers.ros.org/question/205976/sourcing-from-multiple-workspaces/)
     
    In short, when doing the `catkin_make`, `setup.bash` in the `devel` will do the the overlay of workspaces on top of the **current** `$ROS_PACKAGE_PATH`. 
+   
+## New workspace cloned from git: catkin_make failure 
+
+- clone the workspace named "solabot" from git but get error while `catkin_make`
+
+```
+cd ~/solabot/src
+rm -f CMakeLists.txt 
+
+```
+
+Then everything will be alright.
