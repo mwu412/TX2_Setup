@@ -83,7 +83,7 @@ E: Unable to correct problems, you have held broken packages.
    
 ## New workspace cloned from git: catkin_make failure 
 
-- clone the workspace named "solabot" from git but get error while `catkin_make`
+- **Clone the workspace named "solabot" from git to local but get error while `catkin_make`**
 
 ```
 cd ~/solabot/src
