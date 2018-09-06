@@ -88,7 +88,8 @@ E: Unable to correct problems, you have held broken packages.
 ```
 cd ~/solabot/src
 rm -f CMakeLists.txt 
-
+rm -fr devel
+rm -fr build
 ```
 
 Then everything will be alright.
