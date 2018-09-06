@@ -37,6 +37,9 @@ sudo apt-get install mrpt-apps libmrpt-dev
 ###-- effort_controllers (solabot_simulator in gazebo) --###
 sudo apt-get install ros-kinetic-effort-controllers
 
+### rosserial-python
+sudo apt-get install ros-kinetic-rosserial-python
+
 ### rosserial-arduino
 sudo apt-get install ros-kinetic-rosserial-arduino
 
