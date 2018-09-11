@@ -107,3 +107,4 @@ Follow the online instruction to install Jetpack on a host computer...
   2. Then press and hold REC BOTTON
   3. Then press and release RST BOTTON
   4. Wait for 2 secs then release REC BOTTON
+- In the end, if Jetpack is of no use anymore, run the `Jetpack_Uninstaller` in `~/Downloads`. 
