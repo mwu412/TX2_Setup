@@ -46,7 +46,10 @@ sudo apt-get install ros-kinetic-rosserial-arduino
 ### ros-kinetic-joy
 sudo apt-get install ros-kinetic-joy
 
-### urg_node (hokuyo lidar)
+### urg_node (hokuyo lidar
+sudo apt-get install ros-kinetic-urg-node
+
+# (Alternative) From source:
 # cd ~/catkin_ws/src
 
 #git clone https://github.com/ros-drivers/urg_node.git
