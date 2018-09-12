@@ -71,4 +71,4 @@ sudo apt-get install ros-kinetic-urg-node
 sudo apt-get install ros-kinetic-joint-state-controller
 
 ###-- dwa_local_planner --###
-sudo apt-get install ros-kinetic-dwa-local-plannert
+sudo apt-get install ros-kinetic-dwa-local-planner
