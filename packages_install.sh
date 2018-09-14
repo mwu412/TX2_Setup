@@ -1,6 +1,6 @@
 #!/bin/bash
 ###-- This file mainly install packages for sensors or navigation packages --### 
-###-- Read the instruction of each package carefully --###
+###-- WARNING: Read the instruction of each package carefully --###
 
 ###-- basic ros command and package --###
 # rosbash, map_server
@@ -11,6 +11,25 @@ sudo apt-get install ros-kinetic-joy
 
 ###-- rplidar --###
 sudo apt-get install ros-kinetic-rplidar-ros
+# INSTRUCTION: Remember to comment(#) one of the two lidars in solabot/src/solabot_navigation/launch/solabot_core.launch
+
+###-- urg_node (hokuyo lidar) --###
+sudo apt-get install ros-kinetic-urg-node
+# INSTRUCTION: Remember to comment(#) one of the two lidars in solabot/src/solabot_navigation/launch/solabot_core.launch
+
+# (Alternative for urg_node) From source:
+# cd ~/catkin_ws/src
+#git clone https://github.com/ros-drivers/urg_node.git
+#cd urg_node
+#git checkout indigo-devel # there is no kinetic-level yet
+#cd ..
+#git clone https://github.com/ros-perception/laser_proc.git
+#cd laser_proc
+#git checkout indigo-devel # there is no kinetic-level yet
+#cd ..
+#git clone https://github.com/ros-drivers/urg_c.git
+#cd ~/catkin_ws/src
+#catkin_make
 
 ###-- razor_imu_9DOF --###
 sudo apt-get install ros-kinetic-razor-imu-9dof
@@ -47,27 +66,6 @@ sudo apt-get install ros-kinetic-rosserial-arduino
 
 ### ros-kinetic-joy
 sudo apt-get install ros-kinetic-joy
-
-### urg_node (hokuyo lidar
-sudo apt-get install ros-kinetic-urg-node
-
-# (Alternative) From source:
-# cd ~/catkin_ws/src
-
-#git clone https://github.com/ros-drivers/urg_node.git
-#cd urg_node
-#git checkout indigo-devel # there is no kinetic-level yet
-
-#cd ..
-#git clone https://github.com/ros-perception/laser_proc.git
-#cd laser_proc
-#git checkout indigo-devel # there is no kinetic-level yet
-
-#cd ..
-#git clone https://github.com/ros-drivers/urg_c.git
-
-#cd ~/catkin_ws/src
-#catkin_make
 
 ###-- joint_state_controller --###
 sudo apt-get install ros-kinetic-joint-state-controller
