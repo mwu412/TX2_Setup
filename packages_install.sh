@@ -33,7 +33,7 @@ sudo apt-get install ros-kinetic-urg-node
 
 ###-- razor_imu_9DOF --###
 sudo apt-get install ros-kinetic-razor-imu-9dof
-# INSTRUCTION: copy solabot/src/solabot_navigation/scripts/solabot_imu.py to /opt/ros/kinetic/share/razor_imu_9dof/nodes
+# INSTRUCTION: Copy solabot/src/solabot_navigation/scripts/solabot_imu.py to /opt/ros/kinetic/share/razor_imu_9dof/nodes
 
 ###-- rf2o --###
 sudo apt-get install ros-kinetic-mrpt-ekf-slam-2d
@@ -72,3 +72,6 @@ sudo apt-get install ros-kinetic-joint-state-controller
 
 ###-- dwa_local_planner --###
 sudo apt-get install ros-kinetic-dwa-local-planner
+
+###-- slam-gmapping --###
+sudo apt-get install ros-kinetic-slam-gmapping
