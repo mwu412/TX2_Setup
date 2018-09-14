@@ -11,11 +11,11 @@ sudo apt-get install ros-kinetic-joy
 
 ###-- rplidar --###
 sudo apt-get install ros-kinetic-rplidar-ros
-# INSTRUCTION: Remember to comment(#) one of the two lidars in solabot/src/solabot_navigation/launch/solabot_core.launch
+# INSTRUCTION: Remember to comment one of the two lidars in solabot/src/solabot_navigation/launch/solabot_core.launch
 
 ###-- urg_node (hokuyo lidar) --###
 sudo apt-get install ros-kinetic-urg-node
-# INSTRUCTION: Remember to comment(#) one of the two lidars in solabot/src/solabot_navigation/launch/solabot_core.launch
+# INSTRUCTION: Remember to comment one of the two lidars in solabot/src/solabot_navigation/launch/solabot_core.launch
 
 # (Alternative for urg_node) From source:
 # cd ~/catkin_ws/src
