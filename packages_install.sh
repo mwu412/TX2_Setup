@@ -1,5 +1,6 @@
 #!/bin/bash
-###-- this file mainly install packages for sensors or navigation packages --### 
+###-- This file mainly install packages for sensors or navigation packages --### 
+###-- Read the instruction of each package carefully --###
 
 ###-- basic ros command and package --###
 # rosbash, map_server
@@ -13,6 +14,7 @@ sudo apt-get install ros-kinetic-rplidar-ros
 
 ###-- razor_imu_9DOF --###
 sudo apt-get install ros-kinetic-razor-imu-9dof
+# INSTRUCTION: copy solabot/src/solabot_navigation/scripts/solabot_imu.py to /opt/ros/kinetic/share/razor_imu_9dof/nodes
 
 ###-- rf2o --###
 sudo apt-get install ros-kinetic-mrpt-ekf-slam-2d
