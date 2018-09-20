@@ -75,3 +75,7 @@ sudo apt-get install ros-kinetic-dwa-local-planner
 
 ###-- slam-gmapping --###
 sudo apt-get install ros-kinetic-slam-gmapping
+
+###-- openssh --###
+apt-get install openssh-server
+# both TX2 and the remote computer need to install
