@@ -17,28 +17,6 @@
   
   1-5. Now you can compile and upload the firmware to the IMU.
   
-  
-
-## Razor IMU set up error (in Arduino IDE)
-- This happends when following http://wiki.ros.org/razor_imu_9dof
-
-  1-1. Download SparkFun_MPU-9250-DMP_Arduino_Library (dowload .zip file from github)
-  
-  1-2. (In Arduino IDE) sketch -> Include library -> Add ZIP library
-
-  2-1. In Razor-AHRS.ino:
-```
-#define LOG_PORT Serial
-/*
-#if HW__VERSION_CODE == 14001
-// Set your port used to send out data here!
-#define LOG_PORT SERIAL_PORT_USBVIRTUAL
-#else
-// Set your port used to send out data here!
-#define LOG_PORT Serial
-#endif // HW__VERSION_CODE
-*/
-```
 
 ## mrpt_package cannot be installed
 
