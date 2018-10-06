@@ -39,7 +39,14 @@ sudo apt-get install ros-kinetic-razor-imu-9dof
 sudo apt-get install ros-kinetic-mrpt-ekf-slam-2d
 
 ###-- move_base --###
+### move_base 
 sudo apt-get install ros-kinetic-move-base
+### dwa_local_planner 
+sudo apt-get install ros-kinetic-dwa-local-planner
+### teb_local_planner 
+sudo apt-get install ros-kinetic-teb-local-planner
+### global_planner
+sudo apt-get install ros-kinetic-global-planner
 
 ###-- amcl --###
 sudo apt-get install ros-kinetic-amcl
@@ -69,9 +76,6 @@ sudo apt-get install ros-kinetic-joy
 
 ###-- joint_state_controller --###
 sudo apt-get install ros-kinetic-joint-state-controller
-
-###-- dwa_local_planner --###
-sudo apt-get install ros-kinetic-dwa-local-planner
 
 ###-- slam-gmapping --###
 sudo apt-get install ros-kinetic-slam-gmapping
