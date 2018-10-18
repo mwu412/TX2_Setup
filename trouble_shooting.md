@@ -75,8 +75,10 @@ Then everything will be alright.
 
 ## Reset TX1/TX2 to fatory setting (flash os)
 
-- The only way to do that is to install Jetpack and flash the os.
-Follow the online instruction to install Jetpack on a host computer...
+- Method 1(recommanded): Install Jetpack and flash the os
+Follow the online instruction to install Jetpack on a host computer.
+- Method 2: Download the factory image and flash
+This will simply flash the factory image. But you probably are still going to install Jetpack anyway.
 
 **Notice:**
 - Remove all external devices from the TX1/TX2.
