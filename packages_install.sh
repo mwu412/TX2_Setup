@@ -83,3 +83,6 @@ sudo apt-get -y install ros-kinetic-slam-gmapping
 ###-- openssh --###
 apt-get -y install openssh-server
 # both TX2 and the remote computer need to install
+
+###-- ros_controll --###
+sudo apt-get -y install ros-kinetic-ros-control ros-kinetic-ros-controllers
