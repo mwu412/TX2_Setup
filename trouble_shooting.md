@@ -90,3 +90,51 @@ This will simply flash the factory image. But you probably are still going to in
   3. Then press and release RST BOTTON
   4. Wait for 2 secs then release REC BOTTON
 - In the end, if Jetpack is of no use anymore, run the `Jetpack_Uninstaller` in `~/Downloads`. 
+
+## Technical Notes
+Cooperative robots simulation and navigation 
+### Multiple robots overall structure & namespace
+_Warning_: some implementations are for "independent multiple robots" (not cooperative). This kind of implemention is entitled "mulabot" rather than "colabot" in file names in solabot.
+* [link](https://answers.ros.org/question/41433/multiple-robots-simulation-and-navigation/)
+* __map__: 
+Make map server global (use the same map):
+    ```xml
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find your_pkg)/map/map.yaml" >
+        <param name="frame_id" value="chief_map" />
+     </node>
+    ```
+    move_base of each robot:
+    ```xml
+    <node pkg="move_base" ...>
+        <remap from="map" to="/map" />
+    ```
+
+### move_base 
+* multiple sensor sources (e.g. multiple LiDARs)
+    * "Adding multiple sources is fine and should be preferred over fusing them manually"
+    * Add sensors to `observation_sources` in `costmap_common_parameters.yaml` 
+    * [link](https://answers.ros.org/question/238665/multiple-pointcloud2-topics-for-navigation-stack-with-teb_local_planner/)
+
+### Write a pub&sub node
+* [link](https://answers.ros.org/question/45867/publisher-and-subscriber-in-single-node/)
+* [`gazebo_odometry.py`](https://github.com/mit-racecar/racecar-simulator/blob/master/racecar_gazebo/scripts/gazebo_odometry.py) from [mit-racecar](https://github.com/mit-racecar/racecar-simulator) gave an exellent example.
+    * publishing rate is fixed, it will publish `last_update_msg` which is updated by the subsciber
+
+### Publishing rate of publisher
+* Method 1:
+```python
+rate = rospy.Rate(10) # 10hz
+while not rospy.is_shutdown():
+    hello_str = "hello world %s" % rospy.get_time()
+    rospy.loginfo(hello_str)
+    pub.publish(hello_str)
+    rate.sleep()
+```
+* Method 2:
+```python
+def __init__(self):
+    rospy.Timer(rospy.Duration(.05), self.timer_callback) # 20hz
+
+def timer_callback(self, event):
+    self.pub_odom.publish(cmd)
+```
