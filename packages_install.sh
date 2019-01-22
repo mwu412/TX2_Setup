@@ -86,3 +86,9 @@ apt-get -y install openssh-server
 
 ###-- ros_controll --###
 sudo apt-get -y install ros-kinetic-ros-control ros-kinetic-ros-controllers
+
+###-- python-wtool for scan-tools --##
+sudo apt-get -y install python-wstool
+
+###-- scan_tools --##
+sudo apt-get -y install ros-kinetic-scan-tools
