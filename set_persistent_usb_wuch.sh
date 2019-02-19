@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# source: https://github.com/mwu412/linux_tips/blob/master/udev__usb_static_name.md
+# source: https://github.com/mwu412/Ubuntu_Setup/blob/master/Linux_Notes.md
 
 # Create a file #
 sudo touch /etc/udev/rules.d/99-usb-serial.rules
